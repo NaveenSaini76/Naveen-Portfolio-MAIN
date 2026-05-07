@@ -68,6 +68,8 @@ export default function Project3DCard({
             translateZ={35}
             as="a"
             href={url}
+            target={url.startsWith("http") ? "_blank" : undefined}
+            rel={url.startsWith("http") ? "noreferrer" : undefined}
             className="rounded-full border-2 border-[#422800] bg-white px-5 py-3 text-sm font-bold text-[#422800] shadow-[4px_4px_0_0_#422800] transition hover:bg-[#fff7ef] active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0_0_#422800]"
           >
             View project
