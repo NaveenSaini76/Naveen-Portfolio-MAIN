@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Project3DCard from "../components/Project3DCard";
+
+const projects = [
+  {
+    title: "News Authenticity Classifier + Telegram Bot",
+    img: "/project-images/news-classify-project-img.png",
+    desc: "Fake-news detection pipeline in Python and Scikit-learn. Benchmarked 3 classifiers with TF-IDF, Naive Bayes, and Logistic Regression, selected by F1-score, and deployed through a Telegram bot.",
+    url: "/projects",
+    badge: "ML",
+  },
+  {
+    title: "Lecture AI",
+    img: "/project-images/lecture-capture-project-img.png",
+    desc: "AI-powered lecture-to-notes app using React, FastAPI, SQLite, and Python. Processes uploaded content into structured, searchable notes with modular REST API service layers.",
+    url: "/projects",
+    badge: "AI",
+  },
+  {
+    title: "Web-based Money Tracker",
+    img: "/project-images/money-tracker-img.png",
+    desc: "Full-stack finance tracker with SQL-backed CRUD, multi-category spending analytics, savings dashboards, and separated frontend, API, and database layers.",
+    url: "/projects",
+    badge: "FULL STACK",
+  },
+  {
+    title: "RookHide",
+    img: "/project-images/rookhide-img.png",
+    desc: "Steganography side project that hides encrypted data inside Chess PGN files, built around Rust, PyO3, and AES-256 concepts.",
+    url: "/projects",
+    badge: "RUST",
+  },
+];
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2">
+    {projects.map((project) => <Project3DCard client:load {...project} />)}
+  </div>
+</BaseLayout>
