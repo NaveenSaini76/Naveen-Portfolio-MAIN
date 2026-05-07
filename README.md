@@ -1,6 +1,6 @@
-# Anurag-Portfolio-MAIN
+# Naveen-Portfolio-MAIN
 
-Personal portfolio website for Anurag.
+Personal portfolio website for Naveen.
 
 ## Development
 

@@ -4,14 +4,14 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { highlightTextParts } from "../lib/highlightText";
 
 const intro =
-  "CS (AI/ML) student at Chandigarh University with an 8.1 CGPA, building full-stack web apps, ML models, and tools that solve real problems. Top 50 at Graph-E-Thon 3.0 among 10,000+ teams, open to SWE, ML, and AI Engineer roles.";
+  "B.E. (Hons.) Computer Science and Engineering student specializing in AI/ML at Chandigarh University. Focused on ML pipelines, NLP, computer vision, and data analytics with Python and SQL, delivering clean, actionable insights.";
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hello</div>
-    <div class="text-5xl font-bold">I'm Anurag</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer / SDE | Product Engineer | Full Stack + ML</div>
+    <div class="text-5xl font-bold">I'm Naveen</div>
+    <div class="text-3xl py-3 font-bold">AI/ML & Data Analytics Student</div>
     <div class="py-2">
       <text class="text-lg">
         {highlightTextParts(intro).map((part) =>
@@ -20,8 +20,8 @@ const intro =
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="mailto:anuragshakalya@gmail.com" target="_blank">Email</a>
-      <a href="https://linkedin.com/in/anuraggaur29" target="_blank" class="btn btn-outline ml-5">
+      <a class="btn" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Email</a>
+      <a href="https://linkedin.com/in/naveen-saini-0b3617332" target="_blank" class="btn btn-outline ml-5">
         Connect on LinkedIn
       </a>
     </div>
@@ -32,26 +32,26 @@ const intro =
   </div>
 
   <HorizontalCard
-    title="Lecture AI"
-    img="/project-images/lecture-capture-project-img.png"
-    desc="Built an AI-powered lecture-to-notes web app with React, FastAPI, SQLite, and Python, converting uploaded content into structured searchable notes."
-    url="https://lecturecapture-ai.netlify.app/"
-    badge="AI"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="News Authenticity Classifier + Telegram Bot"
-    img="/project-images/news-classify-project-img.png"
-    desc="Trained and benchmarked 3 classifiers using TF-IDF, Naive Bayes, and Logistic Regression, then deployed the best model behind a Telegram bot."
+    title="Credit Card Fraud Detection System"
+    img="/project-images/credit-card.png"
+    desc="Built an end-to-end fraud detection pipeline on 284,000+ transactions using SMOTE, feature engineering, and XGBoost, achieving 0.98 AUC-ROC."
     url="/projects"
     badge="ML"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Web-based Money Tracker"
-    img="/project-images/money-tracker-img.png"
-    desc="Full-stack finance app with SQL-backed CRUD, multi-category analytics, savings dashboards, and separated frontend, API, and DB layers."
+    title="Movie Sentiment & Review Intelligence Analyzer"
+    img="/project-images/movie-sentiment.png"
+    desc="Built a full NLP pipeline on 50,000+ IMDb reviews and achieved 93.6% accuracy with Linear SVM using TF-IDF features."
     url="/projects"
-    badge="FULL STACK"
+    badge="NLP"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Fake News Detection System"
+    img="/project-images/fake-news.avif"
+    desc="NLP-driven fake news classifier using TF-IDF with Naive Bayes and Logistic Regression for reliable credibility detection."
+    url="/projects"
+    badge="ML"
   />
 </BaseLayout>

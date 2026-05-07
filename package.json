@@ -1,6 +1,6 @@
 {
-  "name": "anurag-portfolio",
-  "description": "Portfolio website for Anurag built with Astro, React, and TailwindCSS.",
+  "name": "naveen-portfolio",
+  "description": "Portfolio website for Naveen built with Astro, React, and TailwindCSS.",
   "type": "module",
   "version": "3.0.0",
   "private": true,
