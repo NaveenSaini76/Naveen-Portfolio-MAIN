@@ -20,3 +20,8 @@ pnpm-debug.log*
 
 # Astro
 .astro/
+
+# raw/private source material
+*resume*.md
+*Resume*.md
+project-images/

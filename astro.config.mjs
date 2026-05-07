@@ -5,6 +5,11 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://ramneekkaur.com',
-  integrations: [sitemap(), tailwind(), react()]
+  site: 'https://aish999.netlify.app',
+  integrations: [sitemap(), tailwind(), react()],
+  vite: {
+    build: {
+      sourcemap: false
+    }
+  }
 });
