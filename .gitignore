@@ -25,3 +25,5 @@ pnpm-debug.log*
 *resume*.md
 *Resume*.md
 project-images/
+!public/project-images/
+!public/project-images/**
